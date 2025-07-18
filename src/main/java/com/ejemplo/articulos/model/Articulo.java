@@ -14,13 +14,15 @@ public class Articulo {
 
     private String nombre;
     private Double precio;
+    private Long stock;
 
     public Articulo() {}
 
-    public Articulo(Long id, String nombre, Double precio) {
+    public Articulo(Long id, String nombre, Double precio, Long stock) {
         this.id = id;
         this.nombre = nombre;
         this.precio = precio;
+        this.stock = stock;
     }
 
     public Long getId() { return id; }
@@ -29,4 +31,6 @@ public class Articulo {
     public void setNombre(String nombre) { this.nombre = nombre; }
     public Double getPrecio() { return precio; }
     public void setPrecio(Double precio) { this.precio = precio; }
+    public Long getStock() { return stock; }
+    public void setStock(Long stock) { this.stock = stock; }
 }
